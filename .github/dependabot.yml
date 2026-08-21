@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # refund-agent
+  - package-ecosystem: "npm"
+    directory: "/refund-agent"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
