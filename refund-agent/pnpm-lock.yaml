@@ -16,13 +16,13 @@ importers:
         version: 3.0.0(ai@7.0.69(zod@4.4.3))(zod@4.4.3)
       '@vercel/connect':
         specifier: 0.4.0
-        version: 0.4.0(ai@7.0.69(zod@4.4.3))(eve@0.25.3(ai@7.0.69(zod@4.4.3)))
+        version: 0.4.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))
       ai:
         specifier: ^7.0.26
         version: 7.0.69(zod@4.4.3)
       eve:
-        specifier: ^0.25.3
-        version: 0.25.3(ai@7.0.69(zod@4.4.3))
+        specifier: ^0.42.0
+        version: 0.42.0(ai@7.0.69(zod@4.4.3))
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -408,8 +408,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  crossws@0.4.10:
-    resolution: {integrity: sha512-pz3oubH/dt12KjqsUB0IuXW4nwRDQ583iDsP4555Cpdqx0NoU7pGlWBcayyFI8f/l/idRpgjMEfwuOxSWJYlIA==}
+  crossws@0.4.12:
+    resolution: {integrity: sha512-aypfsr6t0uNvkqaZc6zvBfXzC6pLI0/sIulpkV6RwCVtZqG5ebBzv4weImKK0VNCj91Wl9F5j7p5WU4MNrybng==}
     peerDependencies:
       srvx: '>=0.11.5'
     peerDependenciesMeta:
@@ -457,13 +457,13 @@ packages:
       wrangler:
         optional: true
 
-  eve@0.25.3:
-    resolution: {integrity: sha512-uySORtwV3I15ipyPFAGzeOhYs7HraEfvWg4e2yAum2nSwWMi8KZ1ctj8IHl7ueZ11pOK49Z6Hy5SS9HcsiR7QA==}
+  eve@0.42.0:
+    resolution: {integrity: sha512-W7p71rDN/D0d+cYYAI/YxAlztvDwkRiar2qNt2rhAupSnF5MaV+nw75vyzpBbGUoU2PKTtt7FKYb+LjuHgv0CQ==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      ai: ^7.0.26
+      ai: ^7.0.58
       braintrust: ^3.0.0
       just-bash: ^3.0.0
       microsandbox: ^0.5.0
@@ -532,8 +532,8 @@ packages:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
 
-  nf3@0.3.23:
-    resolution: {integrity: sha512-RWVLAWozmVD3AaDmaU3qMGB3v+yNlH5d9qqStI4e/WLlNQVnJ4YErGDbYCIrGFyrHdbF6I6Baf0Ae6c7tFYmSg==}
+  nf3@0.3.24:
+    resolution: {integrity: sha512-HxLK4bo+5jNsEETZp4w3tJblHOA9MCBY14IN9nZJJV8JDxt9yNIYxuBuLMjTAR5GFa3HL61+8VQDUrXv3/C8fw==}
 
   nitro@3.0.260610-beta:
     resolution: {integrity: sha512-KPb4L5yaF/Rx/xoGMpgHRJvZhbhGiqbRKOwwPLCH9jKTKTsEUHLjnJas85AeCzaswqa8Wi52eQBtRsODC4PS0Q==}
@@ -633,6 +633,10 @@ packages:
   undici@7.29.0:
     resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
     engines: {node: '>=20.18.1'}
+
+  undici@8.9.0:
+    resolution: {integrity: sha512-aWZpUj7XoGonMClx4gdDRfgBjqeA+F473aDmROQQbM9n6PRfK/u1q/a0X4wMTgcHfT8H6fpbt98PFuDUwFg2YA==}
+    engines: {node: '>=22.19.0'}
 
   unenv@2.0.0-rc.24:
     resolution: {integrity: sha512-i7qRCmY42zmCwnYlh9H2SvLEypEFGye5iRmEMKjcGi7zk9UquigRjFtTLz0TYqr0ZGLZhaMHl/foy1bZR+Cwlw==}
@@ -922,12 +926,12 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/connect@0.4.0(ai@7.0.69(zod@4.4.3))(eve@0.25.3(ai@7.0.69(zod@4.4.3)))':
+  '@vercel/connect@0.4.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))':
     dependencies:
       '@vercel/oidc': 3.8.0
     optionalDependencies:
       ai: 7.0.69(zod@4.4.3)
-      eve: 0.25.3(ai@7.0.69(zod@4.4.3))
+      eve: 0.42.0(ai@7.0.69(zod@4.4.3))
 
   '@vercel/oidc@3.2.0': {}
 
@@ -954,7 +958,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  crossws@0.4.10(srvx@0.11.22):
+  crossws@0.4.12(srvx@0.11.22):
     optionalDependencies:
       srvx: 0.11.22
 
@@ -962,15 +966,16 @@ snapshots:
 
   env-runner@0.1.16:
     dependencies:
-      crossws: 0.4.10(srvx@0.11.22)
+      crossws: 0.4.12(srvx@0.11.22)
       exsolve: 1.1.1
       httpxy: 0.5.5
       srvx: 0.11.22
 
-  eve@0.25.3(ai@7.0.69(zod@4.4.3)):
+  eve@0.42.0(ai@7.0.69(zod@4.4.3)):
     dependencies:
       ai: 7.0.69(zod@4.4.3)
       nitro: 3.0.260610-beta
+      undici: 8.9.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1029,12 +1034,12 @@ snapshots:
 
   get-stream@6.0.1: {}
 
-  h3@2.0.1-rc.22(crossws@0.4.10(srvx@0.11.22)):
+  h3@2.0.1-rc.22(crossws@0.4.12(srvx@0.11.22)):
     dependencies:
       rou3: 0.8.1
       srvx: 0.11.22
     optionalDependencies:
-      crossws: 0.4.10(srvx@0.11.22)
+      crossws: 0.4.12(srvx@0.11.22)
 
   hookable@6.1.1: {}
 
@@ -1054,17 +1059,17 @@ snapshots:
 
   mimic-fn@2.1.0: {}
 
-  nf3@0.3.23: {}
+  nf3@0.3.24: {}
 
   nitro@3.0.260610-beta:
     dependencies:
       consola: 3.4.2
-      crossws: 0.4.10(srvx@0.11.22)
+      crossws: 0.4.12(srvx@0.11.22)
       db0: 0.3.4
       env-runner: 0.1.16
-      h3: 2.0.1-rc.22(crossws@0.4.10(srvx@0.11.22))
+      h3: 2.0.1-rc.22(crossws@0.4.12(srvx@0.11.22))
       hookable: 6.1.1
-      nf3: 0.3.23
+      nf3: 0.3.24
       ocache: 0.1.5
       ofetch: 2.0.0-alpha.3
       ohash: 2.0.12
@@ -1187,6 +1192,8 @@ snapshots:
   undici-types@7.18.2: {}
 
   undici@7.29.0: {}
+
+  undici@8.9.0: {}
 
   unenv@2.0.0-rc.24:
     dependencies:
