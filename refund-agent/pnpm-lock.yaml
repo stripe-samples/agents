@@ -15,8 +15,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(ai@7.0.69(zod@4.4.3))(zod@4.4.3)
       '@vercel/connect':
-        specifier: 0.9.0
-        version: 0.9.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))
+        specifier: 2.0.0
+        version: 2.0.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))
       ai:
         specifier: ^7.0.26
         version: 7.0.69(zod@4.4.3)
@@ -360,8 +360,8 @@ packages:
     resolution: {integrity: sha512-g9XerViJ/paZujufXYcu5XYI2vU2rtB4sgdpjUHde5RnOkdmpu0ngH46LCFGHoPXO/C+qDPSczIHIRN+8Q2YKQ==}
     engines: {node: '>= 18'}
 
-  '@vercel/connect@0.9.0':
-    resolution: {integrity: sha512-rm+7pcFpKscVcRqbhvH9yV5Ia7hBTePXPMAXn/PZZcfxtrcguJGGi/9/K0lLhsAJTWCTDr0rp0NhGzRuwK6ucw==}
+  '@vercel/connect@2.0.0':
+    resolution: {integrity: sha512-CYjPe7ZFzXHjtrwQMIDxA7Ne+tgdVu6NvGa11//3n09y5UOsJjE3LCXwAm2/yZPnvPQTbKocLMFt8tV0doXHeQ==}
     peerDependencies:
       '@ai-sdk/mcp': ^1 || ^2
       '@auth/core': '>=0.37.0'
@@ -926,7 +926,7 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/connect@0.9.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))':
+  '@vercel/connect@2.0.0(ai@7.0.69(zod@4.4.3))(eve@0.42.0(ai@7.0.69(zod@4.4.3)))':
     dependencies:
       '@vercel/oidc': 3.8.5
     optionalDependencies:
