@@ -10,22 +10,22 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^4.0.43
-        version: 4.0.43(zod@4.4.3)
+        version: 4.0.43(zod@4.6.4)
       '@openrouter/ai-sdk-provider':
         specifier: ^3.0.0
-        version: 3.0.0(ai@7.0.69(zod@4.4.3))(zod@4.4.3)
+        version: 3.0.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)
       '@vercel/connect':
         specifier: 2.0.0
-        version: 2.0.0(ai@7.0.69(zod@4.4.3))(eve@0.47.2(ai@7.0.69(zod@4.4.3)))
+        version: 2.0.0(ai@7.0.69(zod@4.6.4))(eve@0.47.2(ai@7.0.69(zod@4.6.4)))
       ai:
         specifier: ^7.0.26
-        version: 7.0.69(zod@4.4.3)
+        version: 7.0.69(zod@4.6.4)
       eve:
         specifier: ^0.47.2
-        version: 0.47.2(ai@7.0.69(zod@4.4.3))
+        version: 0.47.2(ai@7.0.69(zod@4.6.4))
       zod:
-        specifier: 4.4.3
-        version: 4.4.3
+        specifier: 4.6.4
+        version: 4.6.4
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.7
@@ -731,32 +731,32 @@ packages:
   zod@4.1.11:
     resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.6.4:
+    resolution: {integrity: sha512-AXSD6hvGdvRjajG/l1cC+d6IrhH+sjmPKtYeQdJIK8MFJl3LyClzS+o/YsVC+zQZPupAaeH5skwwm8YqYH7BqA==}
 
 snapshots:
 
-  '@ai-sdk/gateway@4.0.55(zod@4.4.3)':
+  '@ai-sdk/gateway@4.0.55(zod@4.6.4)':
     dependencies:
       '@ai-sdk/provider': 4.0.7
-      '@ai-sdk/provider-utils': 5.0.27(zod@4.4.3)
+      '@ai-sdk/provider-utils': 5.0.27(zod@4.6.4)
       '@vercel/oidc': 3.2.0
-      zod: 4.4.3
+      zod: 4.6.4
 
-  '@ai-sdk/openai@4.0.43(zod@4.4.3)':
+  '@ai-sdk/openai@4.0.43(zod@4.6.4)':
     dependencies:
       '@ai-sdk/provider': 4.0.7
-      '@ai-sdk/provider-utils': 5.0.27(zod@4.4.3)
-      zod: 4.4.3
+      '@ai-sdk/provider-utils': 5.0.27(zod@4.6.4)
+      zod: 4.6.4
 
-  '@ai-sdk/provider-utils@5.0.27(zod@4.4.3)':
+  '@ai-sdk/provider-utils@5.0.27(zod@4.6.4)':
     dependencies:
       '@ai-sdk/provider': 4.0.7
       '@standard-schema/spec': 1.1.0
       '@workflow/serde': 4.1.0
       eventsource-parser: 3.1.1
       undici: 7.29.0
-      zod: 4.4.3
+      zod: 4.6.4
 
   '@ai-sdk/provider@4.0.7':
     dependencies:
@@ -797,10 +797,10 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.9':
     optional: true
 
-  '@openrouter/ai-sdk-provider@3.0.0(ai@7.0.69(zod@4.4.3))(zod@4.4.3)':
+  '@openrouter/ai-sdk-provider@3.0.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)':
     dependencies:
-      ai: 7.0.69(zod@4.4.3)
-      zod: 4.4.3
+      ai: 7.0.69(zod@4.6.4)
+      zod: 4.6.4
 
   '@oxc-project/types@0.147.0': {}
 
@@ -926,12 +926,12 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/connect@2.0.0(ai@7.0.69(zod@4.4.3))(eve@0.47.2(ai@7.0.69(zod@4.4.3)))':
+  '@vercel/connect@2.0.0(ai@7.0.69(zod@4.6.4))(eve@0.47.2(ai@7.0.69(zod@4.6.4)))':
     dependencies:
       '@vercel/oidc': 3.8.5
     optionalDependencies:
-      ai: 7.0.69(zod@4.4.3)
-      eve: 0.47.2(ai@7.0.69(zod@4.4.3))
+      ai: 7.0.69(zod@4.6.4)
+      eve: 0.47.2(ai@7.0.69(zod@4.6.4))
 
   '@vercel/oidc@3.2.0': {}
 
@@ -943,12 +943,12 @@ snapshots:
 
   '@workflow/serde@4.1.0': {}
 
-  ai@7.0.69(zod@4.4.3):
+  ai@7.0.69(zod@4.6.4):
     dependencies:
-      '@ai-sdk/gateway': 4.0.55(zod@4.4.3)
+      '@ai-sdk/gateway': 4.0.55(zod@4.6.4)
       '@ai-sdk/provider': 4.0.7
-      '@ai-sdk/provider-utils': 5.0.27(zod@4.4.3)
-      zod: 4.4.3
+      '@ai-sdk/provider-utils': 5.0.27(zod@4.6.4)
+      zod: 4.6.4
 
   consola@3.4.2: {}
 
@@ -971,9 +971,9 @@ snapshots:
       httpxy: 0.5.5
       srvx: 0.11.22
 
-  eve@0.47.2(ai@7.0.69(zod@4.4.3)):
+  eve@0.47.2(ai@7.0.69(zod@4.6.4)):
     dependencies:
-      ai: 7.0.69(zod@4.4.3)
+      ai: 7.0.69(zod@4.6.4)
       nitro: 3.0.260610-beta
       undici: 8.9.0
     transitivePeerDependencies:
@@ -1219,4 +1219,4 @@ snapshots:
 
   zod@4.1.11: {}
 
-  zod@4.4.3: {}
+  zod@4.6.4: {}
