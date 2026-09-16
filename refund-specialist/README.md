@@ -1,4 +1,4 @@
-# Refund Agent
+# Refund Specialist
 
 An [eve](https://eve.dev) agent that finds Stripe payments, checks refund requests against policy, and asks for human approval before creating a refund.
 
@@ -12,7 +12,7 @@ An [eve](https://eve.dev) agent that finds Stripe payments, checks refund reques
 ## Install
 
 ```bash
-cd refund-agent
+cd refund-specialist
 pnpm install
 ```
 

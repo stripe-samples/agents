@@ -6,11 +6,11 @@ on:
       - main
     paths:
       - ".github/workflows/ci.yml"
-      - "refund-agent/**"
+      - "refund-specialist/**"
   pull_request:
     paths:
       - ".github/workflows/ci.yml"
-      - "refund-agent/**"
+      - "refund-specialist/**"
   workflow_dispatch:
 
 permissions:
@@ -21,13 +21,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  refund-agent:
-    name: Refund Agent / Node 24
+  refund-specialist:
+    name: Refund Specialist / Node 24
     runs-on: ubuntu-latest
     timeout-minutes: 10
     defaults:
       run:
-        working-directory: refund-agent
+        working-directory: refund-specialist
 
     steps:
       - name: Check out repository
@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
-          cache-dependency-path: refund-agent/pnpm-lock.yaml
+          cache-dependency-path: refund-specialist/pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
