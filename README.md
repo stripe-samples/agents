@@ -2,7 +2,7 @@
 
 A collection of Stripe-powered agents for common workflows.
 
-- [`refund-agent`](./refund-agent): reviews Stripe refund requests and issues approved refunds.
+- [`refund-specialist`](./refund-specialist): reviews Stripe refund requests and issues approved refunds.
 
 Each project has its own README with setup and run instructions.
 
