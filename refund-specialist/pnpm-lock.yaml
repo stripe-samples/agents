@@ -12,8 +12,8 @@ importers:
         specifier: ^4.0.43
         version: 4.0.43(zod@4.6.4)
       '@openrouter/ai-sdk-provider':
-        specifier: ^3.0.0
-        version: 3.0.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)
+        specifier: ^3.1.0
+        version: 3.1.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)
       '@vercel/connect':
         specifier: 2.3.2
         version: 2.3.2(ai@7.0.69(zod@4.6.4))(eve@0.47.2(ai@7.0.69(zod@4.6.4)))
@@ -118,8 +118,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@openrouter/ai-sdk-provider@3.0.0':
-    resolution: {integrity: sha512-m9XTSWoODH2RM5OsZpaGiN7QRR8cdP5paBWq699Tu3JVmGPBKT8xF8XwV0ZBVVsjikD/JgWfak4VSsTR4wAVbg==}
+  '@openrouter/ai-sdk-provider@3.1.0':
+    resolution: {integrity: sha512-BQy1TA9fKrh47s9ivsO6FY5QimN7GUF0i8Qon3pkxQclEgShso0dClpcWn8OIyPLEZZPFaFKgI8TW4S/O0p0Dw==}
     engines: {node: '>=22'}
     peerDependencies:
       ai: ^7.0.0
@@ -800,7 +800,7 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.9':
     optional: true
 
-  '@openrouter/ai-sdk-provider@3.0.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)':
+  '@openrouter/ai-sdk-provider@3.1.0(ai@7.0.69(zod@4.6.4))(zod@4.6.4)':
     dependencies:
       ai: 7.0.69(zod@4.6.4)
       zod: 4.6.4
