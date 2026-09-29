@@ -18,22 +18,26 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^4.0.43",
+    "@ai-sdk/openai": "^4.0.81",
     "@openrouter/ai-sdk-provider": "^3.1.0",
-    "@vercel/connect": "2.3.2",
-    "ai": "^7.0.26",
-    "eve": "^0.47.2",
-    "zod": "4.6.4"
+    "@vercel/connect": "2.3.4",
+    "ai": "^7.0.122",
+    "eve": "^0.68.0",
+    "just-bash": "^3.4.2",
+    "zod": "4.6.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.7",
-    "@types/node": "26.x",
+    "@biomejs/biome": "^2.5.14",
+    "@types/node": "~26.6.3",
     "typescript": "7.0.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome"
-    ]
+    ],
+    "overrides": {
+      "undici@8.9.0": "8.11.2"
+    }
   },
   "overrides": {
     "ai": "^7.0.26"

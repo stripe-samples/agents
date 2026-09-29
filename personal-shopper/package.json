@@ -1,0 +1,38 @@
+{
+  "name": "stripe-personal-shopper",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An Eve agent for Link wallet purchases and financial insights",
+  "packageManager": "pnpm@10.32.1",
+  "type": "module",
+  "scripts": {
+    "build": "eve build",
+    "dev": "eve dev --host 127.0.0.1",
+    "format": "biome check --write .",
+    "lint": "biome check .",
+    "start": "eve start",
+    "typecheck": "tsc"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@onkernel/eve-extension": "^0.1.4",
+    "@openrouter/ai-sdk-provider": "3.1.0",
+    "@stripe/link-integrations-eve": "0.2.0",
+    "ai": "^7.0.122",
+    "eve": "0.54.4",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "^26.6.3",
+    "microsandbox": "^0.7.4",
+    "typescript": "7.0.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "undici@8.9.0": "8.11.2"
+    }
+  }
+}
