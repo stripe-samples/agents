@@ -6,9 +6,6 @@ const openrouter = createOpenRouter({
 });
 
 export default defineAgent({
-  model: openrouter("openai/gpt-6-luna", {
-    // Luna requires this for tool calls over Chat Completions.
-    reasoning: { effort: "none" },
-  }),
+  model: openrouter("openai/gpt-6.1-sol"),
   modelContextWindowTokens: 1_000_000,
 });
