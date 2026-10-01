@@ -1,8 +1,8 @@
 # Personal CFO
 
-A read-only [Eve](https://eve.dev) agent that answers questions about your cash, spending, and connected accounts from your [Link](https://link.com) financial data.
+An [Eve](https://eve.dev) agent that reads your [Link](https://link.com) financial data and analyzes your cash, spending, and connected accounts.
 
-It can list balances, transactions, and connected accounts. It cannot make purchases, retrieve payment credentials, or move money. Eve's shell, file, and web tools are disabled, so transaction text cannot direct the agent to run code or send your data elsewhere.
+It reads balances, transactions, and connected accounts, then summarizes spending by category, recurring charges, unusual items, and month-over-month changes. It analyzes by default and only creates or changes a spend request when you explicitly ask. Eve's shell, file, and web tools are disabled, so transaction text cannot direct the agent to run code or send your data elsewhere.
 
 All sessions share the configured Link account. This sample is intended for personal, local use.
 
@@ -11,7 +11,7 @@ All sessions share the configured Link account. This sample is intended for pers
 - Node.js 24
 - pnpm 10
 - [OpenRouter API key](https://openrouter.ai/settings/keys)
-- A read-only Link access token (see below)
+- A Link access token (see below)
 
 ## Install
 
@@ -21,9 +21,9 @@ pnpm install
 cp .env.example .env.local
 ```
 
-## Create a read-only Link token
+## Create a Link token
 
-Sign in with [Link CLI](https://docs.stripe.com/agentic-commerce/link-cli/oauth), requesting only financial-data access. Store the credentials outside this repository:
+Sign in with [Link CLI](https://docs.stripe.com/agentic-commerce/link-cli/oauth), requesting financial-data access. Store the credentials outside this repository:
 
 ```bash
 npx @stripe/link-cli --auth ~/.link-cli/personal-cfo.json auth login \
@@ -42,7 +42,7 @@ Approve the request in the Link app, then copy the access token:
 jq -r .auth.access_token ~/.link-cli/personal-cfo.json
 ```
 
-Don't request `payment_methods.agentic`; this agent doesn't need it. Tokens expire, and this sample doesn't refresh them. When a token expires, sign in again and restart the server.
+This token only reads data. To let the agent create spend requests when you ask, add `payment_methods.agentic` to `--scope`. Each spend request still needs your approval in Eve and in Link. Tokens expire, and this sample doesn't refresh them. When a token expires, sign in again and restart the server.
 
 Add your credentials to `.env.local`:
 
@@ -68,6 +68,6 @@ pnpm build
 pnpm check:tools
 ```
 
-`pnpm check:tools` fails if the agent exposes any tool beyond the read-only allowlist, for example after a Link extension upgrade.
+`pnpm check:tools` fails if the agent exposes any tool outside the Link extension, such as Eve's shell, file, or web tools.
 
 Run `pnpm format` to apply Biome formatting and safe lint fixes.

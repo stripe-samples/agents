@@ -2,7 +2,7 @@
   "name": "stripe-personal-cfo",
   "version": "0.0.0",
   "private": true,
-  "description": "Read-only Eve agent that answers questions about your Link financial data.",
+  "description": "Eve agent that reads and analyzes your Link financial data.",
   "packageManager": "pnpm@10.32.1",
   "type": "module",
   "scripts": {
