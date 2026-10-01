@@ -12,16 +12,20 @@ and pagination.
    `cash.available` for cash sources and `credit.used` for credit sources.
    Give each balance's `as_of` freshness. Call `list_sources` only if you need
    source names.
-2. **Spending by category.** Call `list_transactions` with `start_date` and
-   `end_date` for the month, and paginate until `has_more` is false. Total
-   outflows by category and currency. Report refunds and deposits separately.
-3. **Recurring and unusual items.** Point out charges that look recurring
-   (same merchant, similar amount) and unusually large or new merchants. Label
-   these as observed patterns, not certainties.
-4. **Month over month.** Compare with the prior month only if you fully
-   retrieved both months. Otherwise, skip the comparison and say why.
-5. **Caveats.** Name any inaccessible sources, pending or uncategorized
-   transactions, stale balances, or pagination that could not finish.
+2. **Spending by category.** Call `get_txn_summary` once, from the first day of
+   the prior month to the last day of the review month, with `granularity:
+   "month"`, `group_by: ["category"]`, and `measures: ["outflow", "inflow"]`.
+   Report the review month's outflow by category and currency. Inflow includes
+   refunds and transfers, so do not call it income.
+3. **Recurring and unusual items.** Call `list_transactions` for the month and
+   point out charges that look recurring (same description, similar amount) and
+   unusually large or new ones. Label these as observed patterns, not
+   certainties.
+4. **Month over month.** Use the `change` and `change_percent` fields from step
+   2. Compare only if `pagination_complete` is true. Otherwise, skip the
+   comparison and say why.
+5. **Caveats.** Name any `sources_without_records`, pending or uncategorized
+   transactions, stale balances, or incomplete pagination.
 
 Open with a two- or three-sentence summary, then a short section for each step.
 Keep it to observations from the data; do not give investment or tax advice.

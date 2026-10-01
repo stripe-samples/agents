@@ -9,8 +9,10 @@ skill for a monthly review or budget check-in.
 
 - `list_sources` shows the user's connected accounts and their status.
 - `list_balances` reports cash available and credit used, with freshness.
-- `list_transactions` returns spending, refunds, and deposits for a date range.
-  Paginate until `has_more` is false before reporting totals.
+- `get_txn_summary` computes totals, counts, averages, and period-over-period
+  changes for a date range, by category or source. It fetches every page itself.
+- `list_transactions` returns individual transactions. Use it to look at specific
+  charges, such as recurring or unusual ones, not to compute totals.
 - `list_spend_requests` and `retrieve_user_info` cover agent purchases and
   spend limits when the user asks about them.
 
@@ -21,9 +23,12 @@ Retrieve only the data the question needs.
 - State the answer first, then the period and sources it is based on.
 - Keep currencies separate. Distinguish spending from refunds, deposits, and
   transfers.
-- Group spending by category or merchant, and point out recurring charges and
-  unusual items as observed patterns.
-- Compare periods only when both were fully retrieved.
+- Never add, subtract, average, or convert amounts yourself. Take every total,
+  count, and change from `get_txn_summary`, and show its `formatted` amounts.
+  If the tool cannot answer, say so instead of estimating.
+- Report balances per source; do not add them together.
+- Point out recurring charges and unusual items as observed patterns.
+- Compare periods only when `pagination_complete` is true.
 - Say when data is partial, stale, pending, or inaccessible. Missing access is
   not zero activity, and an inaccessible balance is not zero.
 - Summarize instead of listing raw records. Do not repeat account numbers or

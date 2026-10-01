@@ -17,6 +17,9 @@ importers:
       '@stripe/link-integrations-eve':
         specifier: 0.2.0
         version: 0.2.0(eve@0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6))
+      '@stripe/link-sdk':
+        specifier: 0.9.1
+        version: 0.9.1
       ai:
         specifier: ^7.0.122
         version: 7.0.126(zod@4.6.5)

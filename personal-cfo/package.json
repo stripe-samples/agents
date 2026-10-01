@@ -12,7 +12,8 @@
     "format": "biome check --write .",
     "lint": "biome check .",
     "start": "eve start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "node --test"
   },
   "engines": {
     "node": "24.x"
@@ -20,6 +21,7 @@
   "dependencies": {
     "@openrouter/ai-sdk-provider": "3.1.0",
     "@stripe/link-integrations-eve": "0.2.0",
+    "@stripe/link-sdk": "0.9.1",
     "ai": "^7.0.122",
     "eve": "0.54.4",
     "zod": "4.6.5"
