@@ -2,7 +2,7 @@
 
 An [Eve](https://eve.dev) agent that reads your [Link](https://link.com) financial data and analyzes your cash, spending, and connected accounts.
 
-It reads balances, transactions, and connected accounts, then summarizes spending by category, recurring charges, unusual items, and month-over-month changes. It analyzes by default and only creates or changes a spend request when you explicitly ask. Eve's shell, file, and web tools are disabled, so transaction text cannot direct the agent to run code or send your data elsewhere.
+It reads balances, transactions, and connected accounts, then summarizes spending by category, recurring charges, unusual items, and month-over-month changes. It analyzes by default and only creates or changes a spend request when you explicitly ask. Totals come from the `get_txn_summary` tool, which computes them in code instead of asking the model to do arithmetic. Eve's shell, file, and web tools are disabled, so transaction text cannot direct the agent to run code or send your data elsewhere.
 
 All sessions share the configured Link account. This sample is intended for personal, local use.
 
@@ -64,10 +64,11 @@ Ask a question in the terminal UI, such as "How did I do last month?" or "What a
 ```bash
 pnpm lint
 pnpm typecheck
+pnpm test
 pnpm build
 pnpm check:tools
 ```
 
-`pnpm check:tools` fails if the agent exposes any tool outside the Link extension, such as Eve's shell, file, or web tools.
+`pnpm test` checks the aggregation in `agent/lib/txn-summary.ts`. `pnpm check:tools` fails if the agent exposes any tool other than the Link extension's, `load_skill`, and `get_txn_summary`, such as Eve's shell, file, or web tools.
 
 Run `pnpm format` to apply Biome formatting and safe lint fixes.
