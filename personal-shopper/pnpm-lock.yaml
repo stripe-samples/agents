@@ -13,19 +13,19 @@ importers:
     dependencies:
       '@onkernel/eve-extension':
         specifier: ^0.1.4
-        version: 0.1.4(ai@7.0.122(zod@4.6.5))(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))
+        version: 0.1.4(ai@7.0.122(zod@4.6.5))(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))
       '@openrouter/ai-sdk-provider':
         specifier: 3.1.0
         version: 3.1.0(ai@7.0.122(zod@4.6.5))(zod@4.6.5)
       '@stripe/link-integrations-eve':
-        specifier: 0.2.0
-        version: 0.2.0(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))
+        specifier: 0.2.1
+        version: 0.2.1(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))
       ai:
         specifier: ^7.0.122
         version: 7.0.122(zod@4.6.5)
       eve:
-        specifier: 0.54.4
-        version: 0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4)
+        specifier: 0.66.1
+        version: 0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5)
       zod:
         specifier: 4.6.5
         version: 4.6.5
@@ -37,8 +37,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3
       microsandbox:
-        specifier: ^0.7.4
-        version: 0.7.4
+        specifier: 0.5.5
+        version: 0.5.5
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -117,9 +117,6 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
-
-  '@microsandbox/types@0.7.4':
-    resolution: {integrity: sha512-f3cJWM/aSK3QT4t23LTxl8pYoHJ+mQL4TOqPcHYM59uzzG0pbOmBU6bfoiffP8saBATyILeetv4liJnvs71vmg==}
 
   '@onkernel/eve-extension@0.1.4':
     resolution: {integrity: sha512-aZ4+ETq9AsEFXKVrroFum5iQXxV5QkFj1XRGmw/4uD133qDXW3RqtNhM2rLvbrJKBLbsEJV6IUK3fqLIlD1nzw==}
@@ -243,47 +240,35 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@stripe/link-integrations-eve@0.2.0':
-    resolution: {integrity: sha512-ODNAfSodbtg9HKAjS//BZ/qWTLAcuRJ7Dsp9CL+I+DcDn65YQiVq/MSbDN6D4fIJpLGUmtzfYA+H+KqzhFlKUA==}
+  '@stripe/link-integrations-eve@0.2.1':
+    resolution: {integrity: sha512-worLdPq0rOuaa1jNsQeWV1qo2uXj5LXG7lNVHytz36Hnpfmm/Jn9oXscdtzW0u97SK+c9I9FjheBL3XpP2TZkw==}
     engines: {node: '>=24'}
     peerDependencies:
       eve: '*'
 
-  '@stripe/link-sdk@0.9.0':
-    resolution: {integrity: sha512-z3qvCYMkPl2JcA2rE3qSy+/uPthI+k3gSGdJIvkf8GHMcy/vG4O70OsWjC71yxyQD/BlyjkpwDvfkdU/Rq4a/g==}
+  '@stripe/link-sdk@0.9.1':
+    resolution: {integrity: sha512-tNtW8vaXpp1+JupY+nct344aBlrbMDBztXMhyIkaENeP+mpaynZHMti4XHv/UgmfxWMTLusgmKgAxlEjpcpHMg==}
     engines: {node: '>=20'}
 
-  '@superradcompany/microsandbox-darwin-arm64@0.7.4':
-    resolution: {integrity: sha512-zAQX9yv8tfr26jaLJGya3wrWkbf8m1zBz7GNoGFEjUbyuv3IS9Lph7DTZ0pWRLFO1VE7NOj8KXUltwNCQvceBg==}
+  '@superradcompany/microsandbox-darwin-arm64@0.5.5':
+    resolution: {integrity: sha512-Yy7b2Ak+/WT+Ho3yRrcKclSl+hNVwcEAqtrWFLIQoGIjSCYEsL30r9S21zKFgd7z5o/FMdaGt/sNqWsV47Ar5g==}
     engines: {node: '>= 22'}
     cpu: [arm64]
     os: [darwin]
 
-  '@superradcompany/microsandbox-linux-arm64-gnu@0.7.4':
-    resolution: {integrity: sha512-idWVBTYYIAm6OGzEt5zCjxkRnQcuXgFeyzNEhZPfeV1qJ2LciYOGiv1uz/x8jWb20BtIXKF/9iVb5JbdyMRjew==}
+  '@superradcompany/microsandbox-linux-arm64-gnu@0.5.5':
+    resolution: {integrity: sha512-rOTT9yv81gEExbu8FDIyVQtN4wUk734jqWVNSXnMOk8CqLlIHZzLw0wRzkvWvuMUQ59B9GHG7jOzIinIkmnlsw==}
     engines: {node: '>= 22'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@superradcompany/microsandbox-linux-x64-gnu@0.7.4':
-    resolution: {integrity: sha512-it75EoQ+qUOv349DROZYNaRx2plA7jBq1TXPuXU+bCetWs5hC7UcZtYzXQ7zd2OUQMFAnIolCDGdLrszsll2Pg==}
+  '@superradcompany/microsandbox-linux-x64-gnu@0.5.5':
+    resolution: {integrity: sha512-ZCrZskoX5wR6nQ42AqDXrJXE2t+2+/N3hb522Wudif+09Sr8OXFB3U2NA2YzN6yvzeL4PFga/DX/BT5jtsRjdg==}
     engines: {node: '>= 22'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
-
-  '@superradcompany/microsandbox-win32-arm64-msvc@0.7.4':
-    resolution: {integrity: sha512-2Zzp3RYfRIMhNXrNwOYWc0g/MJfH7dK6d/pz/nm7PZFv2gwjpFNEof+CXPpJNHjQvPEAj5f0X6KJu01xqGKMsg==}
-    engines: {node: '>= 22'}
-    cpu: [arm64]
-    os: [win32]
-
-  '@superradcompany/microsandbox-win32-x64-msvc@0.7.4':
-    resolution: {integrity: sha512-L6gs981wfKVJjq8HPOqeBhwFE2bnmQu66p0S5KVkcKc3KiJeN5VdtPoBrgCka1YBLrFhV/9jbCzRsCRpM7x2yA==}
-    engines: {node: '>= 22'}
-    cpu: [x64]
-    os: [win32]
 
   '@types/node@26.6.3':
     resolution: {integrity: sha512-dsqMQQoeTLqu9wynDD00q573mNzso3IdQOAfHRJqLCcmCFPoGo9A1bDpUcv/9tnKpErQWv9uKeGfl37EIS02Yg==}
@@ -478,14 +463,15 @@ packages:
     resolution: {integrity: sha512-S8EFBKyznRwPVwayK187cYjvnpgC92xy+q0BIF++V965pfjMVVRbQ/HoTYGA/1EHmZ7E68k6Heq+4WnvVhOL5w==}
     hasBin: true
 
-  eve@0.54.4:
-    resolution: {integrity: sha512-dG0SYFE9xph8xp2F1VA6xe/DZ82d5oxe5Q4zd9zov0DKiS0Yf5l8qgTbns5g9hbzOmNTge+xlTwsNVq3KCD5tg==}
+  eve@0.66.1:
+    resolution: {integrity: sha512-oOZo4ERpMwQbHxVtmhz224mHfN84TCRcC9sIhnCNliW+BVmWiEXjU8VRrlT5joiJA0cI3cedUC6yXl239qHh0Q==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      ai: ^7.0.93
+      ai: ^7.0.105
       braintrust: ^3.0.0
+      chat: ^4.41.0
       dd-trace: ^6.13.0
       just-bash: ^3.1.0
       microsandbox: ^0.5.0
@@ -493,6 +479,8 @@ packages:
       '@opentelemetry/api':
         optional: true
       braintrust:
+        optional: true
+      chat:
         optional: true
       dd-trace:
         optional: true
@@ -555,8 +543,8 @@ packages:
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
 
-  microsandbox@0.7.4:
-    resolution: {integrity: sha512-mL8k0AR2Zb0k+TsYeTqgpXENjZh7JlVIoGu9MnAGDYLf7CWeW2gRuOjcwCRB18XUOLFzlsKEXybXfIESq87lVA==}
+  microsandbox@0.5.5:
+    resolution: {integrity: sha512-AJBFSIK4TYEO6pNfuXfceq3BcqOj2hxBEQjiXYNv6C4UtGDE2CNSzLwGzT2CCkuucRy+9EWvO8KS/zSZMgd/CA==}
     engines: {node: '>= 22'}
     hasBin: true
 
@@ -723,12 +711,10 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.14':
     optional: true
 
-  '@microsandbox/types@0.7.4': {}
-
-  '@onkernel/eve-extension@0.1.4(ai@7.0.122(zod@4.6.5))(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))':
+  '@onkernel/eve-extension@0.1.4(ai@7.0.122(zod@4.6.5))(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))':
     dependencies:
-      '@vercel/connect': 0.4.3(ai@7.0.122(zod@4.6.5))(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))
-      eve: 0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4)
+      '@vercel/connect': 0.4.3(ai@7.0.122(zod@4.6.5))(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))
+      eve: 0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5)
       zod: 4.4.3
     transitivePeerDependencies:
       - '@ai-sdk/mcp'
@@ -796,29 +782,23 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@stripe/link-integrations-eve@0.2.0(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))':
+  '@stripe/link-integrations-eve@0.2.1(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))':
     dependencies:
-      '@stripe/link-sdk': 0.9.0
-      eve: 0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4)
+      '@stripe/link-sdk': 0.9.1
+      eve: 0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5)
       zod: 4.6.5
 
-  '@stripe/link-sdk@0.9.0':
+  '@stripe/link-sdk@0.9.1':
     dependencies:
       zod: 4.6.5
 
-  '@superradcompany/microsandbox-darwin-arm64@0.7.4':
+  '@superradcompany/microsandbox-darwin-arm64@0.5.5':
     optional: true
 
-  '@superradcompany/microsandbox-linux-arm64-gnu@0.7.4':
+  '@superradcompany/microsandbox-linux-arm64-gnu@0.5.5':
     optional: true
 
-  '@superradcompany/microsandbox-linux-x64-gnu@0.7.4':
-    optional: true
-
-  '@superradcompany/microsandbox-win32-arm64-msvc@0.7.4':
-    optional: true
-
-  '@superradcompany/microsandbox-win32-x64-msvc@0.7.4':
+  '@superradcompany/microsandbox-linux-x64-gnu@0.5.5':
     optional: true
 
   '@types/node@26.6.3':
@@ -894,12 +874,12 @@ snapshots:
     dependencies:
       execa: 5.1.1
 
-  '@vercel/connect@0.4.3(ai@7.0.122(zod@4.6.5))(eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4))':
+  '@vercel/connect@0.4.3(ai@7.0.122(zod@4.6.5))(eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5))':
     dependencies:
       '@vercel/oidc': 3.8.1
     optionalDependencies:
       ai: 7.0.122(zod@4.6.5)
-      eve: 0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4)
+      eve: 0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5)
 
   '@vercel/oidc@3.2.0': {}
 
@@ -939,14 +919,14 @@ snapshots:
       httpxy: 0.5.5
       srvx: 1.0.5
 
-  eve@0.54.4(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.7.4):
+  eve@0.66.1(@opentelemetry/api@1.9.0)(ai@7.0.122(zod@4.6.5))(microsandbox@0.5.5):
     dependencies:
       ai: 7.0.122(zod@4.6.5)
       nitro: 3.0.260903-beta
       undici: 8.11.2
     optionalDependencies:
       '@opentelemetry/api': 1.9.0
-      microsandbox: 0.7.4
+      microsandbox: 0.5.5
 
   eventsource-parser@3.1.1: {}
 
@@ -990,15 +970,11 @@ snapshots:
 
   merge-stream@2.0.0: {}
 
-  microsandbox@0.7.4:
-    dependencies:
-      '@microsandbox/types': 0.7.4
+  microsandbox@0.5.5:
     optionalDependencies:
-      '@superradcompany/microsandbox-darwin-arm64': 0.7.4
-      '@superradcompany/microsandbox-linux-arm64-gnu': 0.7.4
-      '@superradcompany/microsandbox-linux-x64-gnu': 0.7.4
-      '@superradcompany/microsandbox-win32-arm64-msvc': 0.7.4
-      '@superradcompany/microsandbox-win32-x64-msvc': 0.7.4
+      '@superradcompany/microsandbox-darwin-arm64': 0.5.5
+      '@superradcompany/microsandbox-linux-arm64-gnu': 0.5.5
+      '@superradcompany/microsandbox-linux-x64-gnu': 0.5.5
 
   mimic-fn@2.1.0: {}
 
