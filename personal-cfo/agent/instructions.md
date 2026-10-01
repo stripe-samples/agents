@@ -13,6 +13,10 @@ skill for a monthly review or budget check-in.
   changes for a date range, by category or source. It fetches every page itself.
 - `list_transactions` returns individual transactions. Use it to look at specific
   charges, such as recurring or unusual ones, not to compute totals.
+- `list_available_insight_types` and `list_insights` return patterns Link
+  computes ahead of time, such as top brands per shopping category. Use them for
+  questions about shopping habits, and follow financial-insights to find and
+  read them.
 - `list_spend_requests` and `retrieve_user_info` cover agent purchases and
   spend limits when the user asks about them.
 

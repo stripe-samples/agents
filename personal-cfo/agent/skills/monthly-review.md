@@ -21,11 +21,15 @@ and pagination.
    point out charges that look recurring (same description, similar amount) and
    unusually large or new ones. Label these as observed patterns, not
    certainties.
-4. **Month over month.** Report the `change` and `change_percent` fields
+4. **Shopping patterns.** If a Link insight fits, such as top brands per
+   shopping category, include it and state its period, which can be longer
+   than the month. Skip it if it is pending or unavailable.
+5. **Month over month.** Report the `change` and `change_percent` fields
    from the step 2 summary. Compare only if `pagination_complete` is true.
    Otherwise, skip the comparison and say why.
-5. **Caveats.** Name any `sources_without_records`, pending or uncategorized
-   transactions, stale balances, or incomplete pagination.
+6. **Caveats.** Name any `sources_without_records`, inaccessible insights,
+   pending or uncategorized transactions, stale balances, or incomplete
+   pagination.
 
 Open with a two- or three-sentence summary, then a short section for each step.
 Keep it to observations from the data; do not give investment or tax advice.
