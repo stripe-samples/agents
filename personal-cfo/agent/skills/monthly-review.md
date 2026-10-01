@@ -21,9 +21,9 @@ and pagination.
    point out charges that look recurring (same description, similar amount) and
    unusually large or new ones. Label these as observed patterns, not
    certainties.
-4. **Month over month.** Use the `change` and `change_percent` fields from step
-   2. Compare only if `pagination_complete` is true. Otherwise, skip the
-   comparison and say why.
+4. **Month over month.** Report the `change` and `change_percent` fields
+   from the step 2 summary. Compare only if `pagination_complete` is true.
+   Otherwise, skip the comparison and say why.
 5. **Caveats.** Name any `sources_without_records`, pending or uncategorized
    transactions, stale balances, or incomplete pagination.
 
