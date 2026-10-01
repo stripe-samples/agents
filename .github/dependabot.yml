@@ -9,6 +9,15 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
 
+  - package-ecosystem: "npm"
+    directory: "/personal-cfo"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
+
   # refund-specialist
   - package-ecosystem: "npm"
     directory: "/refund-specialist"

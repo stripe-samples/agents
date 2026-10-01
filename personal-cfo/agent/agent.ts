@@ -1,0 +1,14 @@
+import { createOpenRouter } from "@openrouter/ai-sdk-provider";
+import { defineAgent } from "eve";
+
+const openrouter = createOpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
+});
+
+export default defineAgent({
+  model: openrouter("openai/gpt-6.1-sol"),
+  modelContextWindowTokens: 1_000_000,
+  // Transaction text is untrusted. Without shell, file, or web tools, it
+  // cannot direct the agent to run code or send financial data elsewhere.
+  defaultTools: false,
+});
