@@ -11,6 +11,10 @@ skill for a monthly review or budget check-in.
 - `list_balances` reports cash available and credit used, with freshness.
 - `list_transactions` returns spending, refunds, and deposits for a date range.
   Paginate until `has_more` is false before reporting totals.
+- `list_available_insight_types` and `list_insights` return patterns Link
+  computes ahead of time, such as top brands per shopping category. Use them for
+  questions about shopping habits, and follow financial-insights to find and
+  read them.
 - `list_spend_requests` and `retrieve_user_info` cover agent purchases and
   spend limits when the user asks about them.
 

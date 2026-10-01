@@ -18,10 +18,14 @@ and pagination.
 3. **Recurring and unusual items.** Point out charges that look recurring
    (same merchant, similar amount) and unusually large or new merchants. Label
    these as observed patterns, not certainties.
-4. **Month over month.** Compare with the prior month only if you fully
+4. **Shopping patterns.** If a Link insight fits, such as top brands per
+   shopping category, include it and state its period, which can be longer
+   than the month. Skip it if it is pending or unavailable.
+5. **Month over month.** Compare with the prior month only if you fully
    retrieved both months. Otherwise, skip the comparison and say why.
-5. **Caveats.** Name any inaccessible sources, pending or uncategorized
-   transactions, stale balances, or pagination that could not finish.
+6. **Caveats.** Name any inaccessible sources or insights, pending or
+   uncategorized transactions, stale balances, or pagination that could not
+   finish.
 
 Open with a two- or three-sentence summary, then a short section for each step.
 Keep it to observations from the data; do not give investment or tax advice.
