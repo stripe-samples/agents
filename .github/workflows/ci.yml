@@ -8,11 +8,13 @@ on:
       - ".github/workflows/ci.yml"
       - "refund-specialist/**"
       - "personal-shopper/**"
+      - "personal-cfo/**"
   pull_request:
     paths:
       - ".github/workflows/ci.yml"
       - "refund-specialist/**"
       - "personal-shopper/**"
+      - "personal-cfo/**"
   workflow_dispatch:
 
 permissions:
@@ -97,3 +99,42 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+  personal-cfo:
+    name: Personal CFO / Node 24
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: personal-cfo
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10.32.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: personal-cfo/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+
+      - name: Check read-only tools
+        run: pnpm check:tools
