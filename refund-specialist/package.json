@@ -22,7 +22,7 @@
     "@openrouter/ai-sdk-provider": "^3.1.0",
     "@vercel/connect": "2.3.4",
     "ai": "^7.0.122",
-    "eve": "^0.68.0",
+    "eve": "^0.70.0",
     "just-bash": "^3.4.2",
     "zod": "4.6.5"
   },
