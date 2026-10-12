@@ -18,8 +18,8 @@ importers:
         specifier: 0.2.0
         version: 0.2.0(eve@0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6))
       '@stripe/link-sdk':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 0.13.0
+        version: 0.13.0
       ai:
         specifier: ^7.0.122
         version: 7.0.126(zod@4.6.5)
@@ -239,8 +239,8 @@ packages:
     peerDependencies:
       eve: '*'
 
-  '@stripe/link-sdk@0.11.0':
-    resolution: {integrity: sha512-23XLYA9Q77519n8RsrGec7OmpWHttTYo18kTAC5kv5NKeMw8tieg6Owdpu/gdNUPWp1d97TETBIZSPXGt90kFg==}
+  '@stripe/link-sdk@0.13.0':
+    resolution: {integrity: sha512-C3qYcHgnQJ6XZBGv482jfJqVMxmQUbguQ7/QI/pjy+PVs8Cu85hu5OlK4JM7QjaUJzhiOS+E/3cnuhx7DuQWxA==}
     engines: {node: '>=20'}
 
   '@stripe/link-sdk@0.9.1':
@@ -664,7 +664,7 @@ snapshots:
       eve: 0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6)
       zod: 4.6.5
 
-  '@stripe/link-sdk@0.11.0':
+  '@stripe/link-sdk@0.13.0':
     dependencies:
       zod: 4.6.5
 
