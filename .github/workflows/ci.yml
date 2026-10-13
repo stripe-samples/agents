@@ -98,6 +98,9 @@ jobs:
         run: pnpm typecheck
 
       - name: Build
+        env:
+          # Config validation only; these checks do not call the Link API.
+          LINK_ACCESS_TOKEN: ci-build-placeholder
         run: pnpm build
 
   personal-cfo:
