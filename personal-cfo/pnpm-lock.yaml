@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  undici@8.9.0: 8.11.2
+  undici@8.10.2: 8.11.2
 
 importers:
 
@@ -15,17 +15,17 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(ai@7.0.126(zod@4.6.5))(zod@4.6.5)
       '@stripe/link-integrations-eve':
-        specifier: 0.2.0
-        version: 0.2.0(eve@0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6))
+        specifier: 0.3.2
+        version: 0.3.2(eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10))
       '@stripe/link-sdk':
-        specifier: 0.13.0
-        version: 0.13.0
+        specifier: 0.13.2
+        version: 0.13.2
       ai:
         specifier: ^7.0.122
         version: 7.0.126(zod@4.6.5)
       eve:
-        specifier: 0.54.4
-        version: 0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6)
+        specifier: 0.71.2
+        version: 0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10)
       zod:
         specifier: 4.6.5
         version: 4.6.5
@@ -37,8 +37,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3
       microsandbox:
-        specifier: ^0.7.6
-        version: 0.7.6
+        specifier: ^0.5.10
+        version: 0.5.10
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -117,9 +117,6 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
-
-  '@microsandbox/types@0.7.6':
-    resolution: {integrity: sha512-c37qErKf6FuPRGOM9CElrEcmg5kGOWghLnDVxZyQwTYEwXGm+ySA1nw7ShSPaUWXWw+/wvCxagGJrw/TK/+f+g==}
 
   '@openrouter/ai-sdk-provider@3.1.0':
     resolution: {integrity: sha512-BQy1TA9fKrh47s9ivsO6FY5QimN7GUF0i8Qon3pkxQclEgShso0dClpcWn8OIyPLEZZPFaFKgI8TW4S/O0p0Dw==}
@@ -233,51 +230,35 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@stripe/link-integrations-eve@0.2.0':
-    resolution: {integrity: sha512-ODNAfSodbtg9HKAjS//BZ/qWTLAcuRJ7Dsp9CL+I+DcDn65YQiVq/MSbDN6D4fIJpLGUmtzfYA+H+KqzhFlKUA==}
+  '@stripe/link-integrations-eve@0.3.2':
+    resolution: {integrity: sha512-VyQe+lClfshJhnuPCpwjfbR8KUXE5nZfJdR+/WQoY+hs1IAtq0iUDroPt6QZhQZ/yfoYhDHVaWNzabw+obdyQg==}
     engines: {node: '>=24'}
     peerDependencies:
       eve: '*'
 
-  '@stripe/link-sdk@0.13.0':
-    resolution: {integrity: sha512-C3qYcHgnQJ6XZBGv482jfJqVMxmQUbguQ7/QI/pjy+PVs8Cu85hu5OlK4JM7QjaUJzhiOS+E/3cnuhx7DuQWxA==}
+  '@stripe/link-sdk@0.13.2':
+    resolution: {integrity: sha512-ohDX5gKn2SCsOPTZjGp6MAwawvMDluDeJ9pKkv/wmMhAMtfX0N7OCjXaDhcRrtli5TNc7nvMWZJf6SctXhKZVg==}
     engines: {node: '>=20'}
 
-  '@stripe/link-sdk@0.9.1':
-    resolution: {integrity: sha512-tNtW8vaXpp1+JupY+nct344aBlrbMDBztXMhyIkaENeP+mpaynZHMti4XHv/UgmfxWMTLusgmKgAxlEjpcpHMg==}
-    engines: {node: '>=20'}
-
-  '@superradcompany/microsandbox-darwin-arm64@0.7.6':
-    resolution: {integrity: sha512-gTboiANChdpsdPzfZ40Co9ls1UIhKGol5reMBApcCNCvp7z1C65vPK3i9QnWp4yFeClQ0k+gQezApiTSRsevGw==}
+  '@superradcompany/microsandbox-darwin-arm64@0.5.10':
+    resolution: {integrity: sha512-MGEV2SuLzSg3SiQJy2TXRE9SoWnmIUEhCAQno5y0hJ6dsMe7FbaRDFZtHpKiK4XExAstL5WhT1XF+JJWTEfSqg==}
     engines: {node: '>= 22'}
     cpu: [arm64]
     os: [darwin]
 
-  '@superradcompany/microsandbox-linux-arm64-gnu@0.7.6':
-    resolution: {integrity: sha512-089OfW/yHu3wkiMqtNG0jcTWCwjZeNC+x5piXFipQKS2MuYWa/U9tQxGfSQnn6ZU7eA3cKJUjVA8EGIa0RvUYg==}
+  '@superradcompany/microsandbox-linux-arm64-gnu@0.5.10':
+    resolution: {integrity: sha512-4FYoAURc1qbNxIbBFK9shMQ9MxklgPRGEsY7tQog8beqvc3U91W34aZyOu90OTRJm0TNsdoLIg3lxKP4LKIJYQ==}
     engines: {node: '>= 22'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@superradcompany/microsandbox-linux-x64-gnu@0.7.6':
-    resolution: {integrity: sha512-1wwZjgki/JuHeo/GI4BVREIrtsSim7Ei8S5xohkz3R6CGyf+xNgoodrKtJXB/NwxmxHDCscc88/qGUbTsljhsw==}
+  '@superradcompany/microsandbox-linux-x64-gnu@0.5.10':
+    resolution: {integrity: sha512-M9FjBAQ36dxhfs5S62uVxCTNAZzxjUgprNh41dIG6H6eF+tAEHYMY1lUEf/w1rkQw8SUsVRrtS+wfVyIM4z9fA==}
     engines: {node: '>= 22'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
-
-  '@superradcompany/microsandbox-win32-arm64-msvc@0.7.6':
-    resolution: {integrity: sha512-KAsVOqBDJp8Pg4C7/Tq1xiVA/P7OiETmYA+/w9W/2dDxo+/MgiWV6D63vqisn5J2ug0tcOmGXn9D9qaZMoZywg==}
-    engines: {node: '>= 22'}
-    cpu: [arm64]
-    os: [win32]
-
-  '@superradcompany/microsandbox-win32-x64-msvc@0.7.6':
-    resolution: {integrity: sha512-JkMe0sJZVXwnpBrcrH34InRZSMYY12vAmRwpMNm9DQUkVBA91utfkY1SKL+cI7ux9LZZq7GDVe8IypA8sdAu/Q==}
-    engines: {node: '>= 22'}
-    cpu: [x64]
-    os: [win32]
 
   '@types/node@26.6.3':
     resolution: {integrity: sha512-dsqMQQoeTLqu9wynDD00q573mNzso3IdQOAfHRJqLCcmCFPoGo9A1bDpUcv/9tnKpErQWv9uKeGfl37EIS02Yg==}
@@ -434,14 +415,15 @@ packages:
     resolution: {integrity: sha512-S8EFBKyznRwPVwayK187cYjvnpgC92xy+q0BIF++V965pfjMVVRbQ/HoTYGA/1EHmZ7E68k6Heq+4WnvVhOL5w==}
     hasBin: true
 
-  eve@0.54.4:
-    resolution: {integrity: sha512-dG0SYFE9xph8xp2F1VA6xe/DZ82d5oxe5Q4zd9zov0DKiS0Yf5l8qgTbns5g9hbzOmNTge+xlTwsNVq3KCD5tg==}
+  eve@0.71.2:
+    resolution: {integrity: sha512-1JYtSScSYevikoDVowtZdMS83LGzdw3hmgf6kriZyclpRsmmW3+Yb9byFtJ4P4lZ2JLfSSLgUMoBuTSqmFCsUg==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      ai: ^7.0.93
+      ai: ^7.0.105
       braintrust: ^3.0.0
+      chat: ^4.41.0
       dd-trace: ^6.13.0
       just-bash: ^3.1.0
       microsandbox: ^0.5.0
@@ -449,6 +431,8 @@ packages:
       '@opentelemetry/api':
         optional: true
       braintrust:
+        optional: true
+      chat:
         optional: true
       dd-trace:
         optional: true
@@ -486,8 +470,8 @@ packages:
   json-schema@0.4.0:
     resolution: {integrity: sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==}
 
-  microsandbox@0.7.6:
-    resolution: {integrity: sha512-66lq0qH5xiFPm4nOb4euqsTd7AuDCGEg+ibdWtBu1nlzGGVEbCYBOjCy8Aihrinnu/kpEtx+d99x1nUMCpb8XQ==}
+  microsandbox@0.5.10:
+    resolution: {integrity: sha512-0NVFu8DohPq/hrG76CJ5x2x8wckNQq8KSN/VXxyVLns8WfDyBzfSSYXHUSV2evjdRB3dkA9FUJjnGujb2XRD1Q==}
     engines: {node: '>= 22'}
     hasBin: true
 
@@ -600,8 +584,6 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.14':
     optional: true
 
-  '@microsandbox/types@0.7.6': {}
-
   '@openrouter/ai-sdk-provider@3.1.0(ai@7.0.126(zod@4.6.5))(zod@4.6.5)':
     dependencies:
       ai: 7.0.126(zod@4.6.5)
@@ -658,33 +640,23 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@stripe/link-integrations-eve@0.2.0(eve@0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6))':
+  '@stripe/link-integrations-eve@0.3.2(eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10))':
     dependencies:
-      '@stripe/link-sdk': 0.9.1
-      eve: 0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6)
+      '@stripe/link-sdk': 0.13.2
+      eve: 0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10)
       zod: 4.6.5
 
-  '@stripe/link-sdk@0.13.0':
-    dependencies:
-      zod: 4.6.5
-
-  '@stripe/link-sdk@0.9.1':
+  '@stripe/link-sdk@0.13.2':
     dependencies:
       zod: 4.6.5
 
-  '@superradcompany/microsandbox-darwin-arm64@0.7.6':
+  '@superradcompany/microsandbox-darwin-arm64@0.5.10':
     optional: true
 
-  '@superradcompany/microsandbox-linux-arm64-gnu@0.7.6':
+  '@superradcompany/microsandbox-linux-arm64-gnu@0.5.10':
     optional: true
 
-  '@superradcompany/microsandbox-linux-x64-gnu@0.7.6':
-    optional: true
-
-  '@superradcompany/microsandbox-win32-arm64-msvc@0.7.6':
-    optional: true
-
-  '@superradcompany/microsandbox-win32-x64-msvc@0.7.6':
+  '@superradcompany/microsandbox-linux-x64-gnu@0.5.10':
     optional: true
 
   '@types/node@26.6.3':
@@ -777,13 +749,13 @@ snapshots:
       httpxy: 0.5.5
       srvx: 1.0.5
 
-  eve@0.54.4(ai@7.0.126(zod@4.6.5))(microsandbox@0.7.6):
+  eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10):
     dependencies:
       ai: 7.0.126(zod@4.6.5)
       nitro: 3.0.260903-beta
       undici: 8.11.2
     optionalDependencies:
-      microsandbox: 0.7.6
+      microsandbox: 0.5.10
 
   eventsource-parser@3.1.1: {}
 
@@ -803,15 +775,11 @@ snapshots:
 
   json-schema@0.4.0: {}
 
-  microsandbox@0.7.6:
-    dependencies:
-      '@microsandbox/types': 0.7.6
+  microsandbox@0.5.10:
     optionalDependencies:
-      '@superradcompany/microsandbox-darwin-arm64': 0.7.6
-      '@superradcompany/microsandbox-linux-arm64-gnu': 0.7.6
-      '@superradcompany/microsandbox-linux-x64-gnu': 0.7.6
-      '@superradcompany/microsandbox-win32-arm64-msvc': 0.7.6
-      '@superradcompany/microsandbox-win32-x64-msvc': 0.7.6
+      '@superradcompany/microsandbox-darwin-arm64': 0.5.10
+      '@superradcompany/microsandbox-linux-arm64-gnu': 0.5.10
+      '@superradcompany/microsandbox-linux-x64-gnu': 0.5.10
 
   nf3@0.3.24: {}
 
