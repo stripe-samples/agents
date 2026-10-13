@@ -17,5 +17,6 @@ totals amounts itself. Its logic lives in `agent/lib/txn-summary.ts`, tested by
 `pnpm test`. It follows the planned Link `get_txn_summary` shape; replace it with
 Link's tool once that ships.
 
-Keep Eve at `0.54.4` until a compatible Link extension is published. Link `0.2.0`
-requires tool contract v36, which Eve `0.68.0` does not support.
+Keep Eve and the Link extension compatible. Link `0.3.2` is built with Eve
+`0.71.2` and requires tool contract v73. Check the extension's generated
+compatibility metadata and build the sample when upgrading either package.

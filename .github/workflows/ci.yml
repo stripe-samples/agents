@@ -137,7 +137,13 @@ jobs:
         run: pnpm test
 
       - name: Build
+        env:
+          # Config validation only; these checks do not call the Link API.
+          LINK_ACCESS_TOKEN: ci-build-placeholder
         run: pnpm build
 
       - name: Check read-only tools
+        env:
+          # Config validation only; these checks do not call the Link API.
+          LINK_ACCESS_TOKEN: ci-build-placeholder
         run: pnpm check:tools
