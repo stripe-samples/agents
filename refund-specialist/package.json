@@ -20,7 +20,7 @@
   "dependencies": {
     "@ai-sdk/openai": "^4.0.81",
     "@openrouter/ai-sdk-provider": "^3.1.0",
-    "@vercel/connect": "2.3.4",
+    "@vercel/connect": "2.4.1",
     "ai": "^7.0.122",
     "eve": "^0.70.0",
     "just-bash": "^3.6.0",
