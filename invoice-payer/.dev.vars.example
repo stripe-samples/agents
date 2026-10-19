@@ -1,0 +1,12 @@
+# Create an agent API key with Treasury access: https://docs.stripe.com/keys#agent-keys
+STRIPE_API_KEY=replace_me
+# https://openrouter.ai/settings/keys
+OPENROUTER_API_KEY=replace_me
+
+# OAuth credentials for a Google account with the gmail.readonly scope.
+GOOGLE_CLIENT_ID=replace_me.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=replace_me
+GOOGLE_REFRESH_TOKEN=replace_me
+
+# Generate with: openssl rand -hex 32
+RUN_AUTH_TOKEN=replace_with_a_random_token_at_least_32_characters

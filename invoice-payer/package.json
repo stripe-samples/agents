@@ -1,0 +1,44 @@
+{
+  "name": "stripe-invoice-payer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Cloudflare Agent that pays invoices from Gmail using Stripe Treasury over MCP.",
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1",
+    "deploy": "wrangler deploy",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "types": "wrangler types --env-interface CloudflareBindings",
+    "typecheck": "pnpm types && tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@modelcontextprotocol/server": "2.3.1",
+    "@openrouter/ai-sdk-provider": "3.1.0",
+    "agents": "0.28.1",
+    "ai": "^7.0.143",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@cloudflare/vitest-plugin": "^1.4.5",
+    "@types/node": "^26.6.3",
+    "typescript": "7.0.2",
+    "vitest": "^5.0.5",
+    "wrangler": "^4.151.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
+  }
+}
