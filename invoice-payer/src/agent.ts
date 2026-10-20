@@ -65,6 +65,22 @@ export class InvoicePayer extends Agent<Env, RunState> {
         },
         abortSignal: AbortSignal.timeout(240_000),
         stopWhen: stepCountIs(20),
+        onToolExecutionStart: ({ toolCall }) => {
+          console.log("Tool call", { threadId: this.name, toolName: toolCall.toolName });
+        },
+        onToolExecutionEnd: ({ toolCall, toolOutput }) => {
+          if (toolOutput.type !== "tool-error") return;
+          const message =
+            toolOutput.error instanceof Error ? toolOutput.error.message : String(toolOutput.error);
+          const approvalId = message.match(/\*\*Approval Request\*\*:\s*(\S+)/)?.[1];
+          if (!approvalId) return;
+          console.log("Stripe approval required", {
+            threadId: this.name,
+            toolName: toolCall.toolName,
+            approvalId,
+            approvalUrl: message.match(/\*\*Approval URL\*\*:\s*(\S+)/)?.[1],
+          });
+        },
         tools: {
           ...this.mcp.getAITools(),
           get_thread: tool({
