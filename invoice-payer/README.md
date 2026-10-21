@@ -61,6 +61,16 @@ curl http://localhost:8787/threads/THREAD_ID \
 
 Each poll scans up to 100 labeled messages and retains Gmail's pagination cursor for the next poll. Continue polling to traverse the label. After the last page, the next poll starts from the newest messages again. `/threads` lists the 100 most recently updated records.
 
+### Reset local Cloudflare state
+
+Stop `pnpm dev`, then run:
+
+```bash
+pnpm reset:local
+```
+
+This removes Wrangler's local emulation state, including Durable Object SQLite data and queued messages. Start `pnpm dev` again afterwards. It does not change deployed Cloudflare resources or Stripe data, but it also removes the local durable guards that prevent a Gmail thread from being processed again. Use a dedicated development Gmail label and Stripe test environment, and do not reset while a run could have initiated an external payment.
+
 | Status | Meaning |
 | --- | --- |
 | `queued` | Discovered; waiting for Queue delivery. |

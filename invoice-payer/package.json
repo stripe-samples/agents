@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "wrangler dev --ip 127.0.0.1",
+    "reset:local": "rm -rf .wrangler/state",
     "deploy": "wrangler deploy",
     "build": "wrangler deploy --dry-run --outdir dist",
     "types": "wrangler types --env-interface CloudflareBindings",

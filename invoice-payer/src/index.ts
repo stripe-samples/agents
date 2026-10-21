@@ -10,7 +10,10 @@ function authorized(request: Request, env: Env): boolean {
   if (!env.RUN_AUTH_TOKEN || env.RUN_AUTH_TOKEN.length < 32) return false;
   const header = request.headers.get("Authorization") ?? "";
   const digest = (value: string) => createHash("sha256").update(value).digest();
-  return timingSafeEqual(digest(header), digest(`Bearer ${env.RUN_AUTH_TOKEN}`));
+  return timingSafeEqual(
+    digest(header),
+    digest(`Bearer ${env.RUN_AUTH_TOKEN}`),
+  );
 }
 
 function inbox(env: Env) {
@@ -18,7 +21,10 @@ function inbox(env: Env) {
 }
 
 function json(value: unknown, status = 200): Response {
-  return Response.json(value, { status, headers: { "Cache-Control": "no-store" } });
+  return Response.json(value, {
+    status,
+    headers: { "Cache-Control": "no-store" },
+  });
 }
 
 export default {
@@ -39,15 +45,22 @@ export default {
         return json({ threads: await inbox(env).listThreads() });
       }
       if (url.pathname.startsWith("/threads/") && request.method === "GET") {
-        const id = threadIdSchema.safeParse(url.pathname.slice("/threads/".length));
+        const id = threadIdSchema.safeParse(
+          url.pathname.slice("/threads/".length),
+        );
         if (!id.success || !(await inbox(env).hasThread(id.data)))
           return json({ error: "Thread not found" }, 404);
-        return json(await (await getAgentByName(env.InvoicePayer, id.data)).getRun());
+        return json(
+          await (await getAgentByName(env.InvoicePayer, id.data)).getRun(),
+        );
       }
       return json({ error: "Not found" }, 404);
     } catch {
       return json(
-        { error: "Request failed. Check Worker configuration and provider availability." },
+        {
+          error:
+            "Request failed. Check Worker configuration and provider availability.",
+        },
         503,
       );
     }
@@ -72,8 +85,10 @@ export default {
           continue;
         }
         const agent = await getAgentByName(env.InvoicePayer, threadId);
+        console.log(`Processing thread ${threadId}`);
         const run = await agent.processThread();
         await inbox(env).recordStatus(threadId, run.status);
+        console.log(`Processed thread ${threadId}`);
         message.ack();
       } catch {
         // Retry delivery only. processThread's durable guard prevents payment replay.
