@@ -2,17 +2,19 @@
 
 A collection of Stripe-powered agents for common workflows.
 
-- [`refund-specialist`](./refund-specialist): reviews Stripe refund requests and issues approved refunds.
-- [`personal-shopper`](./personal-shopper): browses stores with Kernel and uses a Link wallet for approved purchases and financial insights.
-- [`personal-cfo`](./personal-cfo): reads and analyzes your cash, spending, and connected accounts from Link financial data, taking action only when you ask.
-- [`invoice-payer`](./invoice-payer): reads invoices from labeled Gmail threads and pays existing recipients with Stripe Treasury, using Cloudflare Agents and Stripe MCP.
+| Agent | Description |
+| --- | --- |
+| [refund-specialist](./refund-specialist) | Reviews Stripe refund requests and issues approved refunds. |
+| [personal-shopper](./personal-shopper) | Browses stores with Kernel and uses a Link wallet for approved purchases and financial insights. |
+| [personal-cfo](./personal-cfo) | Reads and analyzes your cash, spending, and connected accounts from Link financial data, taking action only when you ask. |
+| [invoice-payer](./invoice-payer) | Reads invoices from labeled Gmail threads and pays existing recipients with Stripe Treasury, using Cloudflare Agents and Stripe MCP. |
 
 Each project has its own README with setup and run instructions.
 
 ## Support
 
 - [Stripe Discord](https://stripe.com/go/developer-chat)
-- [GitHub Issues](https://github.com/stripe-samples/machine-payments/issues)
+- [GitHub Issues](https://github.com/stripe-samples/agents/issues)
 
 ## License
 
