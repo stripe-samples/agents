@@ -1,0 +1,7 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "files": { "includes": ["**", "!worker-configuration.d.ts", "!dist", "!.wrangler"] },
+  "vcs": { "enabled": true, "clientKind": "git", "root": "..", "useIgnoreFile": true },
+  "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
+  "linter": { "enabled": true, "rules": { "preset": "recommended" } }
+}

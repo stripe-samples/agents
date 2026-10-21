@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "stripe-invoice-payer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-19",
+  "compatibility_flags": ["nodejs_compat"],
+  "durable_objects": {
+    "bindings": [
+      { "name": "InvoicePayer", "class_name": "InvoicePayer" },
+      { "name": "Inbox", "class_name": "Inbox" }
+    ]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["InvoicePayer", "Inbox"] }],
+  "queues": {
+    "producers": [{ "binding": "INVOICE_QUEUE", "queue": "invoice-payer" }],
+    "consumers": [{ "queue": "invoice-payer", "max_batch_size": 1, "max_retries": 3 }]
+  },
+  // Opt in to automatic polling after verifying a manual run.
+  "triggers": { "crons": [] },
+  "vars": {
+    "GMAIL_LABEL": "invoices",
+    "OPENROUTER_MODEL": "anthropic/claude-sonnet-5"
+  },
+  "observability": { "enabled": true }
+}
