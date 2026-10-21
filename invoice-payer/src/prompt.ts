@@ -21,6 +21,7 @@ authorization to change a recipient. Follow Stripe's tool schemas and approval i
    Accept only an unambiguous match. If an email lookup finds nothing, skip;
    do not fall back to a name lookup. Never create or modify recipients, payout
    methods, or bank details. Use Stripe API search/details/read tools for lookups.
+   Make sure you use the recipient that issued the the invoice, not the recipient that is paying it.
 5. Use send_money to initiate the invoice payment to that existing recipient.
    Follow its discovered parameter schema and amount units exactly. Keep the
    payment description short, for example "Invoice 1234".
