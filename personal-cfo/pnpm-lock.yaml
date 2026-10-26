@@ -18,8 +18,8 @@ importers:
         specifier: 0.3.2
         version: 0.3.2(eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10))
       '@stripe/link-sdk':
-        specifier: 0.13.2
-        version: 0.13.2
+        specifier: 0.15.0
+        version: 0.15.0
       ai:
         specifier: ^7.0.122
         version: 7.0.126(zod@4.6.5)
@@ -238,6 +238,10 @@ packages:
 
   '@stripe/link-sdk@0.13.2':
     resolution: {integrity: sha512-ohDX5gKn2SCsOPTZjGp6MAwawvMDluDeJ9pKkv/wmMhAMtfX0N7OCjXaDhcRrtli5TNc7nvMWZJf6SctXhKZVg==}
+    engines: {node: '>=20'}
+
+  '@stripe/link-sdk@0.15.0':
+    resolution: {integrity: sha512-EbTPhou4bGZvsNOqOFMXDqgV6H7f7iDIgcZ/NJMvTSzmqw9/I0vQpIk+nHfbDNGm6yo4rY0uqb3zYT4GOLLLqQ==}
     engines: {node: '>=20'}
 
   '@superradcompany/microsandbox-darwin-arm64@0.5.10':
@@ -527,6 +531,9 @@ packages:
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
+
 snapshots:
 
   '@ai-sdk/gateway@4.0.102(zod@4.6.5)':
@@ -649,6 +656,10 @@ snapshots:
   '@stripe/link-sdk@0.13.2':
     dependencies:
       zod: 4.6.5
+
+  '@stripe/link-sdk@0.15.0':
+    dependencies:
+      zod: 4.6.7
 
   '@superradcompany/microsandbox-darwin-arm64@0.5.10':
     optional: true
@@ -864,3 +875,5 @@ snapshots:
   unstorage@2.0.0-alpha.10: {}
 
   zod@4.6.5: {}
+
+  zod@4.6.7: {}
