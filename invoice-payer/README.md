@@ -61,13 +61,13 @@ curl http://localhost:8787/threads/THREAD_ID \
 
 Each poll scans up to 100 labeled messages and retains Gmail's pagination cursor for the next poll. Continue polling to traverse the label. After the last page, the next poll starts from the newest messages again. `/threads` lists the 100 most recently updated records.
 
-| Status | Meaning |
-| --- | --- |
-| `queued` | Discovered; waiting for Queue delivery. |
-| `pending` | Agent created; processing has not started. |
-| `processing` | Run started; it will not be started again. |
-| `completed` | The agent finished its review. Read the summary: payments may be skipped, unsuccessful, or awaiting Stripe approval. This does **not** mean all invoices are paid. |
-| `needs_review` | The run failed or the model stopped at a limit instead of completing its response. Review the outcome manually. |
+| Status         | Meaning                                                                                                                                                            |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `queued`       | Discovered; waiting for Queue delivery.                                                                                                                            |
+| `pending`      | Agent created; processing has not started.                                                                                                                         |
+| `processing`   | Run started; it will not be started again.                                                                                                                         |
+| `completed`    | The agent finished its review. Read the summary: payments may be skipped, unsuccessful, or awaiting Stripe approval. This does **not** mean all invoices are paid. |
+| `needs_review` | The run failed or the model stopped at a limit instead of completing its response. Review the outcome manually.                                                    |
 
 If a run remains `processing` after a Worker interruption, inspect its payments and approvals in Stripe. The sample deliberately has no reset/replay endpoint. Reconcile and finish unresolved payments in Stripe rather than replaying the thread. Approval flows that need another interactive tool call must also be completed outside this unattended run.
 
