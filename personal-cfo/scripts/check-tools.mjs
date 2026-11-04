@@ -1,4 +1,4 @@
-// Fails if Eve exposes a tool other than the Link extension's, load_skill, and
+// Fails if Eve exposes a tool other than the Link extension's, eve__skill, and
 // get_txn_summary, such as shell, file, or web tools. Transaction text is untrusted, so those would let it run code
 // or send financial data elsewhere.
 import { deepStrictEqual } from "node:assert/strict";
@@ -13,7 +13,7 @@ const info = JSON.parse(
 deepStrictEqual(info.status, "ready");
 deepStrictEqual(
   info.tools.filter(
-    (name) => !["load_skill", "get_txn_summary"].includes(name) && !name.startsWith("link__"),
+    (name) => !["eve__skill", "get_txn_summary"].includes(name) && !name.startsWith("link__"),
   ),
   [],
 );

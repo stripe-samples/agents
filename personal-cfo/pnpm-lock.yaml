@@ -13,19 +13,19 @@ importers:
     dependencies:
       '@openrouter/ai-sdk-provider':
         specifier: 3.1.0
-        version: 3.1.0(ai@7.0.126(zod@4.6.5))(zod@4.6.5)
+        version: 3.1.0(ai@7.0.162(zod@4.6.5))(zod@4.6.5)
       '@stripe/link-integrations-eve':
-        specifier: 0.3.2
-        version: 0.3.2(eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10))
+        specifier: 0.3.9
+        version: 0.3.9(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))
       '@stripe/link-sdk':
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 2.0.0
+        version: 2.0.0
       ai:
-        specifier: ^7.0.122
-        version: 7.0.126(zod@4.6.5)
+        specifier: ^7.0.162
+        version: 7.0.162(zod@4.6.5)
       eve:
-        specifier: 0.71.2
-        version: 0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10)
+        specifier: 0.79.0
+        version: 0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10)
       zod:
         specifier: 4.6.5
         version: 4.6.5
@@ -45,20 +45,20 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@4.0.102':
-    resolution: {integrity: sha512-kAVldt8D2AVSs7BjBZTRWHcFF71lPH8ouS6/QVlFCnKcUsShjXMdRwW6es5BfxyGewHbXfSirSc8j6efKSkIdA==}
+  '@ai-sdk/gateway@4.0.135':
+    resolution: {integrity: sha512-gnMpZP42WIhy24fpnbbtV7SBqEhYY8ZSMsfgoNRh5r41D1HwnJTm1k7d4uYSIpiaEb5J8IPTHVSzwgWmGoSFEA==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider-utils@5.0.53':
-    resolution: {integrity: sha512-VVe6UDd0y0/B4TfauuKKzcppqvhTmSluwwUVT4WG2/8h7gFbyFm7PM4UGM+ZXe3/RI6bv+Vl1cw/7aiBoQqdxg==}
+  '@ai-sdk/provider-utils@5.0.74':
+    resolution: {integrity: sha512-42R/bzs520oy3PMj8FI1KGegjLEjaUsNcaEltb6yxN0KnmhihWvlgMb19pEF8CKKqv6Bq6+qMVji8mtyrMubSQ==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider@4.0.21':
-    resolution: {integrity: sha512-UpbC9C1oht8dhfKPbVXSLRZS3DI8uk8n5v2uMjBPNIYGsC2kL045ywq7D8Hh9KgnH9rP5W/GxQdYtWScRouqlA==}
+  '@ai-sdk/provider@4.0.35':
+    resolution: {integrity: sha512-yBz6fmLS8MSCIzy7NiHEUAq56ZLD4ZA1GR6bpXBxgbwUacP1La7LuwAr/xy9jSzthem4F8Xu2OrhvU/JrE9fYA==}
     engines: {node: '>=22'}
 
   '@biomejs/biome@2.6.4':
@@ -242,18 +242,14 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@stripe/link-integrations-eve@0.3.2':
-    resolution: {integrity: sha512-VyQe+lClfshJhnuPCpwjfbR8KUXE5nZfJdR+/WQoY+hs1IAtq0iUDroPt6QZhQZ/yfoYhDHVaWNzabw+obdyQg==}
+  '@stripe/link-integrations-eve@0.3.9':
+    resolution: {integrity: sha512-ApliXdHDfexYwMdLTzlPKpTVDE0cwE0cUqW7CYrSyDu4rsMug278egrO3Aln4jyVFaxpPDFAbOHl7t8rO3pS5w==}
     engines: {node: '>=24'}
     peerDependencies:
       eve: '*'
 
-  '@stripe/link-sdk@0.13.2':
-    resolution: {integrity: sha512-ohDX5gKn2SCsOPTZjGp6MAwawvMDluDeJ9pKkv/wmMhAMtfX0N7OCjXaDhcRrtli5TNc7nvMWZJf6SctXhKZVg==}
-    engines: {node: '>=20'}
-
-  '@stripe/link-sdk@1.0.0':
-    resolution: {integrity: sha512-O9VgJqJM1RM7Sss5Qx/oDQdwJoLOGPEAOTeBD39U5JuJgj4+f1gUvUoIM628sR1Q+XKY5G0b9kmjIZLbejS4+g==}
+  '@stripe/link-sdk@2.0.0':
+    resolution: {integrity: sha512-z1wVD2vEHpQVkweUclbvJG0Jbi9VqicayoswEawzsAVZIMmHE874RTA+uWZrkBRYKZu8k9wucn/cUuz4bm4Beg==}
     engines: {node: '>=20'}
 
   '@superradcompany/microsandbox-darwin-arm64@0.5.10':
@@ -406,8 +402,8 @@ packages:
   '@workflow/serde@4.1.0':
     resolution: {integrity: sha512-pav4F2BoirECWR7Nf1TKt+2eETcBj7jj4cBefQ8VXQCA6NPkaKeLfj/zMgi+3zYV5ZIBT4GuUiphsj0/b9hPQQ==}
 
-  ai@7.0.126:
-    resolution: {integrity: sha512-7egcwpnVR2xn3YlJYEX2y15X7Bv7Rc8U2h4YjCOnj5KZL6Pr/BQFzJuF+9fkm3SefmpgkaYRXzrvhafVjxGZww==}
+  ai@7.0.162:
+    resolution: {integrity: sha512-NPzL6/GmjjPwhzM1kGP9O60TfJ3uXV4Z4A/ztljxcJFAmRAFAjgk5mAHaikk3sE8NQo4NbRCiS+DgHinE2d0sQ==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -431,13 +427,13 @@ packages:
     resolution: {integrity: sha512-S8EFBKyznRwPVwayK187cYjvnpgC92xy+q0BIF++V965pfjMVVRbQ/HoTYGA/1EHmZ7E68k6Heq+4WnvVhOL5w==}
     hasBin: true
 
-  eve@0.71.2:
-    resolution: {integrity: sha512-1JYtSScSYevikoDVowtZdMS83LGzdw3hmgf6kriZyclpRsmmW3+Yb9byFtJ4P4lZ2JLfSSLgUMoBuTSqmFCsUg==}
+  eve@0.79.0:
+    resolution: {integrity: sha512-H+SERBdpVUh3w5r/KQxOMnN/fyXiE3UXyBL56yviVON5UHLbBZBbobCzdOUog5OsP3hw1iZzjcSuHC0XF2YJ4Q==}
     engines: {node: '>=24'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      ai: ^7.0.105
+      ai: ^7.0.137
       braintrust: ^3.0.0
       chat: ^4.41.0
       dd-trace: ^6.13.0
@@ -526,8 +522,8 @@ packages:
   undici-types@8.9.0:
     resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
-  undici@7.30.0:
-    resolution: {integrity: sha512-dkrQXeHSaoamnItlYbmzG0wFYrM0ZwDxCIg0A7aKjTyyhh9svRzCNFEzV+Vm05/yehjCzjDZ31KXfGEjYSztDQ==}
+  undici@7.30.1:
+    resolution: {integrity: sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg==}
     engines: {node: '>=20.18.1'}
 
   undici@8.11.2:
@@ -548,23 +544,23 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@4.0.102(zod@4.6.5)':
+  '@ai-sdk/gateway@4.0.135(zod@4.6.5)':
     dependencies:
-      '@ai-sdk/provider': 4.0.21
-      '@ai-sdk/provider-utils': 5.0.53(zod@4.6.5)
+      '@ai-sdk/provider': 4.0.35
+      '@ai-sdk/provider-utils': 5.0.74(zod@4.6.5)
       '@vercel/oidc': 3.2.0
       zod: 4.6.5
 
-  '@ai-sdk/provider-utils@5.0.53(zod@4.6.5)':
+  '@ai-sdk/provider-utils@5.0.74(zod@4.6.5)':
     dependencies:
-      '@ai-sdk/provider': 4.0.21
+      '@ai-sdk/provider': 4.0.35
       '@standard-schema/spec': 1.1.0
       '@workflow/serde': 4.1.0
       eventsource-parser: 3.1.1
-      undici: 7.30.0
+      undici: 7.30.1
       zod: 4.6.5
 
-  '@ai-sdk/provider@4.0.21':
+  '@ai-sdk/provider@4.0.35':
     dependencies:
       json-schema: 0.4.0
 
@@ -611,9 +607,9 @@ snapshots:
   '@biomejs/cli-win32-x64@2.6.4':
     optional: true
 
-  '@openrouter/ai-sdk-provider@3.1.0(ai@7.0.126(zod@4.6.5))(zod@4.6.5)':
+  '@openrouter/ai-sdk-provider@3.1.0(ai@7.0.162(zod@4.6.5))(zod@4.6.5)':
     dependencies:
-      ai: 7.0.126(zod@4.6.5)
+      ai: 7.0.162(zod@4.6.5)
       zod: 4.6.5
 
   '@oxc-project/types@0.152.0': {}
@@ -667,17 +663,13 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@stripe/link-integrations-eve@0.3.2(eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10))':
+  '@stripe/link-integrations-eve@0.3.9(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))':
     dependencies:
-      '@stripe/link-sdk': 0.13.2
-      eve: 0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10)
-      zod: 4.6.5
+      '@stripe/link-sdk': 2.0.0
+      eve: 0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10)
+      zod: 4.6.7
 
-  '@stripe/link-sdk@0.13.2':
-    dependencies:
-      zod: 4.6.5
-
-  '@stripe/link-sdk@1.0.0':
+  '@stripe/link-sdk@2.0.0':
     dependencies:
       zod: 4.6.7
 
@@ -758,11 +750,11 @@ snapshots:
 
   '@workflow/serde@4.1.0': {}
 
-  ai@7.0.126(zod@4.6.5):
+  ai@7.0.162(zod@4.6.5):
     dependencies:
-      '@ai-sdk/gateway': 4.0.102(zod@4.6.5)
-      '@ai-sdk/provider': 4.0.21
-      '@ai-sdk/provider-utils': 5.0.53(zod@4.6.5)
+      '@ai-sdk/gateway': 4.0.135(zod@4.6.5)
+      '@ai-sdk/provider': 4.0.35
+      '@ai-sdk/provider-utils': 5.0.74(zod@4.6.5)
       zod: 4.6.5
 
   consola@3.4.2: {}
@@ -780,9 +772,9 @@ snapshots:
       httpxy: 0.5.5
       srvx: 1.0.5
 
-  eve@0.71.2(ai@7.0.126(zod@4.6.5))(microsandbox@0.5.10):
+  eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10):
     dependencies:
-      ai: 7.0.126(zod@4.6.5)
+      ai: 7.0.162(zod@4.6.5)
       nitro: 3.0.260903-beta
       undici: 8.11.2
     optionalDependencies:
@@ -884,7 +876,7 @@ snapshots:
 
   undici-types@8.9.0: {}
 
-  undici@7.30.0: {}
+  undici@7.30.1: {}
 
   undici@8.11.2: {}
 

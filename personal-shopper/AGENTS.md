@@ -8,6 +8,6 @@ The Link integration is mounted in `agent/extensions/link.ts`. Its tools and ski
 come from `@stripe/link-integrations-eve`; read that package's README before changing
 the mount or authorization. Preserve its default purchase approval policy.
 
-Keep Eve and the Link extension compatible. Link `0.3.2` is built with Eve
-`0.71.2` and requires tool contract v73. Check the extension's generated
+Keep Eve and the Link extension compatible. Link `0.3.9` is built with Eve
+`0.79.0` and requires tool contract v88. Check the extension's generated
 compatibility metadata and build the sample when upgrading either package.

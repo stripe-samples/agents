@@ -19,9 +19,9 @@
   "dependencies": {
     "@onkernel/eve-extension": "^0.1.4",
     "@openrouter/ai-sdk-provider": "3.1.0",
-    "@stripe/link-integrations-eve": "0.3.2",
-    "ai": "^7.0.122",
-    "eve": "0.71.2",
+    "@stripe/link-integrations-eve": "0.3.9",
+    "ai": "^7.0.162",
+    "eve": "0.79.0",
     "zod": "4.6.5"
   },
   "devDependencies": {
