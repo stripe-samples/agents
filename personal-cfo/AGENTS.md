@@ -10,13 +10,13 @@ the mount or authorization. Preserve its default purchase approval policy.
 
 `agent/agent.ts` disables Eve's default tools because transaction text is untrusted.
 Do not add shell, file, or web tools. `pnpm check:tools` fails if any tool other
-than the Link extension's, `load_skill`, and `get_txn_summary` is exposed.
+than the Link extension's, `eve__skill`, and `get_txn_summary` is exposed.
 
 `agent/tools/get_txn_summary.ts` does the agent's arithmetic so the model never
 totals amounts itself. Its logic lives in `agent/lib/txn-summary.ts`, tested by
 `pnpm test`. It follows the planned Link `get_txn_summary` shape; replace it with
 Link's tool once that ships.
 
-Keep Eve and the Link extension compatible. Link `0.3.2` is built with Eve
-`0.71.2` and requires tool contract v73. Check the extension's generated
+Keep Eve and the Link extension compatible. Link `0.3.9` is built with Eve
+`0.79.0` and requires tool contract v88. Check the extension's generated
 compatibility metadata and build the sample when upgrading either package.

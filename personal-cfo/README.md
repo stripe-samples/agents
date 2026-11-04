@@ -69,6 +69,6 @@ pnpm build
 pnpm check:tools
 ```
 
-`pnpm test` checks the aggregation in `agent/lib/txn-summary.ts`. `pnpm check:tools` fails if the agent exposes any tool other than the Link extension's, `load_skill`, and `get_txn_summary`, such as Eve's shell, file, or web tools.
+`pnpm test` checks the aggregation in `agent/lib/txn-summary.ts`. `pnpm check:tools` fails if the agent exposes any tool other than the Link extension's, `eve__skill`, and `get_txn_summary`, such as Eve's shell, file, or web tools. Eve provides `eve__skill` automatically to load the agent's skills.
 
 Run `pnpm format` to apply Biome formatting and safe lint fixes.
