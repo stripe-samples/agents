@@ -21,7 +21,7 @@
     "@openrouter/ai-sdk-provider": "3.1.0",
     "@stripe/link-integrations-eve": "0.3.9",
     "ai": "^7.0.162",
-    "eve": "0.79.0",
+    "eve": "0.91.0",
     "zod": "4.6.5"
   },
   "devDependencies": {
