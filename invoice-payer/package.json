@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
-    "@cloudflare/vitest-plugin": "^1.4.5",
+    "@cloudflare/vitest-plugin": "^1.6.0",
     "@types/node": "^26.6.3",
     "typescript": "7.0.2",
     "vitest": "^5.1.0",
