@@ -18,8 +18,8 @@ importers:
         specifier: 0.3.9
         version: 0.3.9(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))
       '@stripe/link-sdk':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 3.1.0
+        version: 3.1.0
       ai:
         specifier: ^7.0.162
         version: 7.0.162(zod@4.6.5)
@@ -250,6 +250,10 @@ packages:
 
   '@stripe/link-sdk@2.0.0':
     resolution: {integrity: sha512-z1wVD2vEHpQVkweUclbvJG0Jbi9VqicayoswEawzsAVZIMmHE874RTA+uWZrkBRYKZu8k9wucn/cUuz4bm4Beg==}
+    engines: {node: '>=20'}
+
+  '@stripe/link-sdk@3.1.0':
+    resolution: {integrity: sha512-QozzUrsTiLs22g+khOUFrJyRshbCTf15ISKkia++3CM/CWYeIXg0TiHwt6Homxhl8MyMj1oeR2GdPyssNBvuOg==}
     engines: {node: '>=20'}
 
   '@superradcompany/microsandbox-darwin-arm64@0.5.10':
@@ -670,6 +674,10 @@ snapshots:
       zod: 4.6.7
 
   '@stripe/link-sdk@2.0.0':
+    dependencies:
+      zod: 4.6.7
+
+  '@stripe/link-sdk@3.1.0':
     dependencies:
       zod: 4.6.7
 
