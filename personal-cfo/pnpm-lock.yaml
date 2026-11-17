@@ -15,8 +15,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(ai@7.0.162(zod@4.6.5))(zod@4.6.5)
       '@stripe/link-integrations-eve':
-        specifier: 0.3.9
-        version: 0.3.9(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))
+        specifier: 0.4.1
+        version: 0.4.1(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))
       '@stripe/link-sdk':
         specifier: 3.1.0
         version: 3.1.0
@@ -242,15 +242,11 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@stripe/link-integrations-eve@0.3.9':
-    resolution: {integrity: sha512-ApliXdHDfexYwMdLTzlPKpTVDE0cwE0cUqW7CYrSyDu4rsMug278egrO3Aln4jyVFaxpPDFAbOHl7t8rO3pS5w==}
+  '@stripe/link-integrations-eve@0.4.1':
+    resolution: {integrity: sha512-K5NH/qrkFmIvzUgz/wGh2T6d8KhPWWzrB8Vo9XYNwDoMFuH9su/9e2YSCQ0WwZJEZIWP2tLzDwquSTmA/5kBRg==}
     engines: {node: '>=24'}
     peerDependencies:
       eve: '*'
-
-  '@stripe/link-sdk@2.0.0':
-    resolution: {integrity: sha512-z1wVD2vEHpQVkweUclbvJG0Jbi9VqicayoswEawzsAVZIMmHE874RTA+uWZrkBRYKZu8k9wucn/cUuz4bm4Beg==}
-    engines: {node: '>=20'}
 
   '@stripe/link-sdk@3.1.0':
     resolution: {integrity: sha512-QozzUrsTiLs22g+khOUFrJyRshbCTf15ISKkia++3CM/CWYeIXg0TiHwt6Homxhl8MyMj1oeR2GdPyssNBvuOg==}
@@ -667,14 +663,10 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@stripe/link-integrations-eve@0.3.9(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))':
+  '@stripe/link-integrations-eve@0.4.1(eve@0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10))':
     dependencies:
-      '@stripe/link-sdk': 2.0.0
+      '@stripe/link-sdk': 3.1.0
       eve: 0.79.0(ai@7.0.162(zod@4.6.5))(microsandbox@0.5.10)
-      zod: 4.6.7
-
-  '@stripe/link-sdk@2.0.0':
-    dependencies:
       zod: 4.6.7
 
   '@stripe/link-sdk@3.1.0':
