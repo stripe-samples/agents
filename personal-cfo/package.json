@@ -23,7 +23,7 @@
     "@stripe/link-integrations-eve": "0.4.1",
     "@stripe/link-sdk": "3.1.0",
     "ai": "^7.0.162",
-    "eve": "0.79.0",
+    "eve": "0.91.0",
     "zod": "4.6.5"
   },
   "devDependencies": {
